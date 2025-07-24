@@ -1,0 +1,21 @@
+<div class="flex items-center text-[14px] font-medium mt-2">
+  <input
+    type="checkbox"
+    id="cgu"
+    [(ngModel)]="isChecked"
+    (click)="toggleCheckbox()"
+    class="accent-blueDarkM"
+  />
+  <label for="cgu" class="ml-1" >
+    J’ai lu et j’accepte les <a href="#" class="text-blueDarkM underline mr-7">CGU.</a>
+  </label>
+
+  <button
+    type="button"
+    [class.text-blueDarkM]="isChecked"
+    [class.text-grayDarkM]="!isChecked"
+    class="ml-auto font-medium"
+  >
+    Confirmer
+  </button>
+</div>
